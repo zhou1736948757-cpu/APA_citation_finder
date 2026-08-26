@@ -15,6 +15,7 @@ verification_cache.json
 # 环境变量（可能含 API key）
 .env
 .env.*
+!.env.example
 
 # Publish-or-Perish 二进制（8.1MB，EULA 限个人非商业用途，不随仓库分发）
 # 安装：python scripts/install_optional.py 或按 README 从 harzing.com 下载
