@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# 运行产物（示例 output/ 保留，缓存/临时文件忽略）
+verification_cache.json
+*.docx~
+*.tmp
+
+# 环境变量（可能含 API key）
+.env
+.env.*
+
+# Publish-or-Perish 二进制（8.1MB，EULA 限个人非商业用途，不随仓库分发）
+# 安装：python scripts/install_optional.py 或按 README 从 harzing.com 下载
+tools/pop8query
+tools/pop8metrics
+tools/pop8error
+tools/

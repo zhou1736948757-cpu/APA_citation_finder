@@ -1,0 +1,52 @@
+{
+ "run_dir": ".",
+ "gates": {
+  "8A_bibliographic": {
+   "overall": "PASS",
+   "fails": 0,
+   "weak": 0,
+   "findings": []
+  },
+  "8B_entailment": {
+   "overall": "PASS",
+   "counts": {
+    "PASS": 1,
+    "WEAK": 0,
+    "FAIL": 0
+   },
+   "links": [
+    {
+     "claim_id": "C001",
+     "paper_id": "0bb8eaa170513d0e",
+     "title": "Consumer Acceptance and Use of Information Technology: Extending the Unified Theory of Acceptance and Use of Technology1",
+     "doi": "10.2307/41410412",
+     "evidence_level": "ABSTRACT",
+     "evidence_source": "search_result",
+     "evidence_text": "This paper extends the unified theory of acceptance and use of technology (UTAUT) to study acceptance and use of technology in a consumer context. Our proposed UTAUT2 incorporates three constructs into UTAUT: hedonic motivation, price value, and habit. Individual differences—namely, age, gender, and experience—are hypothesized to moderate the effects of these constructs on behavioral intention and technology use. Results from a two-stage online survey, with technology use data collected four months after the first survey, of 1,512 mobile Internet consumers supported our model. Compared to UTAUT, the extensions proposed in UTAUT2 produced a substantial improvement in the variance explained in behavioral intention (56 percent to 74 percent) and technology use (40 percent to 52 percent). The theoretical and managerial implications of these results are discussed.",
+     "selection_status": "SELECTED",
+     "reason": "heuristic overlap fallback (no LLM configured)",
+     "claim_text": "The unified theory of acceptance and use of technology (UTAUT2) was proposed by Venkatesh and colleagues, which extends the original technology acceptance model.",
+     "entailment_verdict": "PASS",
+     "entailment_reason": "heuristic overlap 0.73",
+     "review_method": "heuristic"
+    }
+   ],
+   "policy": {
+    "FAIL": "citation must NOT be inserted",
+    "WEAK": "reject under High Rigor; flag-or-replace under Academic Standard"
+   }
+  }
+ },
+ "chain": {
+  "findings": [],
+  "present": {
+   "claims.jsonl": true,
+   "search_log.jsonl": true,
+   "evidence_log.jsonl": true,
+   "verification_log.jsonl": true,
+   "support_log.jsonl": true,
+   "final_papers.json": true
+  }
+ },
+ "overall": "PASS"
+}

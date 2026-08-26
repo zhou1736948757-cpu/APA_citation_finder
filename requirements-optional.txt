@@ -1,0 +1,12 @@
+# 可选源依赖（默认不安装，懒加载，缺失时仅警告、绝不阻塞核心流）
+# 安装：python scripts/install_optional.py   或   pip install -r requirements-optional.txt
+
+# Exa 语义检索（search_exa.py）——需要 EXA_API_KEY
+exa-py>=1.1.0
+
+# Google Scholar（search_google_scholar.py）——scholarly 可能被 Google 反爬限制
+scholarly>=1.7.0
+
+# 本地 PDF 元数据/全文提取（search_local.py 的 PDF 分支）——强烈推荐
+PyMuPDF>=1.24.0
+
