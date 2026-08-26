@@ -1,36 +1,8 @@
-# APA_citation_finder — requirements
+# APA_citation_finder — core dependencies
+# 安装：python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# 可选源依赖见 requirements-optional.txt（懒加载，缺失不影响核心流）
+# LLM 支撑评分/审计可选：.env 配置 USE_LLM_SUPPORT/LLM_API_KEY/LLM_API_ENDPOINT/LLM_MODEL
 
-## Core (required)
-```
 requests>=2.31
 python-docx>=1.1
 python-Levenshtein>=0.25
-```
-
-## Optional (lazy-loaded; never required for core flow)
-```
-# Exa semantic discovery (search_exa.py)
-exa-py>=1.0.6
-
-# Google Scholar fallback (search_google_scholar.py) — fragile, CAPTCHA-prone
-scholarly>=1.7
-
-# PDF metadata extraction for local papers (search_local.py)
-PyMuPDF>=1.24
-
-```
-
-## Install
-```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
-```
-
-## Notes
-- LLM support scoring (score_support.py) and Gate 8B entailment review
-  (audit_entailment.py) read `.env`:
-  `USE_LLM_SUPPORT=true LLM_API_KEY=... LLM_API_ENDPOINT=... LLM_MODEL=...`
-  Without them both fall back to deterministic heuristics — the pipeline
-  still runs, with `scoring_method=heuristic` logged.
-- Optional sources are OFF by default; core flow (OpenAlex + Semantic Scholar
-  + Crossref) requires no API keys.
