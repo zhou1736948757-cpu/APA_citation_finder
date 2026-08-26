@@ -12,8 +12,8 @@ APA_citation_finder/
 ├── SKILL.md                  # 技能入口（9 阶段工作流 + IRON RULES）
 ├── requirements.txt           # 核心依赖 + 可选依赖说明
 ├── migration_inventory.md     # 双旧技能逐组件审计清单
-├── scripts/                   # 28 个可执行脚本 + utils/ 包
-├── references/                # 12 份规范文档
+├── scripts/                   # 27 个可执行脚本 + utils/ 包
+├── references/                # 13 份规范文档
 ├── assets/format_templates/   # 5 种引用格式模板
 ├── data/                      # priority_journals.csv / blacklist_journals.csv
 ├── tests/                     # unit / integration / fixtures / regression
